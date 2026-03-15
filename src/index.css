@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #0a0805;
+  --color-gold: #d4a843;
+  --color-gold-dark: #9d770f;
+  --color-gold-light: #b8860b;
+  --color-cream: #f9f0d7;
+  --color-rose: #b76e79;
+  --color-rose-light: #e8a0a8;
+  --color-rose-dark: #c4777f;
+
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Jost", sans-serif;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:ital,wght@0,300..800;1,300..800&display=swap');
+
+  body {
+    background-color: var(--color-obsidian);
+    color: var(--color-cream);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(to right, var(--color-gold), var(--color-gold-dark), var(--color-gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-rose {
+    background: linear-gradient(to right, var(--color-rose), var(--color-rose-light), var(--color-rose-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 168, 67, 0.15);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-obsidian);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 2px;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
