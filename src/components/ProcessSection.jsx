@@ -38,7 +38,7 @@ const ProcessPanel = ({ step, index }) => {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
   return (
-    <div ref={ref} className="relative w-full h-[150vh] md:h-[200vh]">
+    <div ref={ref} className="relative w-full h-[125vh] md:h-[150vh]">
       <div className="sticky top-0 h-screen w-full flex flex-col md:flex-row overflow-hidden bg-obsidian">
         
         {/* Mobile Stack / Desktop Left Panel */}
