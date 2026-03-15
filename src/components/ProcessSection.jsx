@@ -7,14 +7,14 @@ const processSteps = [
     tag: 'AI-Powered',
     title: 'Imagination, Visualized.',
     description: 'We harness the power of artificial intelligence to generate initial concepts from your creative vision. Provide us with your ideas, and watch as limitless possibilities unfold before your eyes, setting the foundation for your unique piece.',
-    image: '/images/process-ai.png',
+    image: '/images/slide-01.jpg',
   },
   {
     id: '02',
     tag: 'Real-Time Render',
     title: 'Precision in 3D.',
     description: 'Once the concept is selected, our designers meticulously sculpt your jewelry using advanced 3D CAD software. Every facet, prong, and millimeter is perfected digitally, providing you with photorealistic renders for approval.',
-    image: '/images/process-render.png',
+    image: '/images/slide-02.jpg',
   },
   {
     id: '03',
